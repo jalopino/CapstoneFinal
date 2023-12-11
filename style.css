@@ -1,0 +1,350 @@
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('design/bg.png');
+    background-size: cover;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    width: fit-content;
+    display: inline-block;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff; /* Background color */
+    border: black solid 1px;
+    color: #333; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth hover transition */
+}
+
+.button:hover {
+    background-color: #333; /* Background color on hover */
+    border-color: #333; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginform {
+    background-color: white;
+    border: solid 2px rgba(0, 0, 0, 0.063);
+    border-radius: 2px;
+    padding: 20px; /* Adjusted padding for better spacing */
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for larger screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+section {
+    width: 100%;
+    background-color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* CSS for the menu */
+.navcontainer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: rgb(0, 0, 0) solid 1px;
+}
+  
+.logo {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.logo-pic {
+    max-width: 15%;
+    max-height: 15%;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+  
+nav ul li {
+    padding-right: 20px;
+}
+  
+nav ul li:last-child {
+    margin-right: 0;
+}
+  
+nav a {
+    text-decoration: none;
+    color: black !important; 
+    font-weight: lighter;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+/* CSS for the footer */
+
+footer p {
+    margin: 0;
+}
+
+.footercontainer {
+    border-top: rgb(0, 0, 0) solid 1px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Flexbox --- */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex: 50%;
+    max-height: 100%;
+}
+
+i {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Style for <a> Tag Button */
+.a-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Removes underline from <a> tag */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+}
+a {
+    color: #176bfd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1253c4;
+}
+/* Hover Effect */
+.a-button:hover, .a-button:focus {
+    background-color: #0056b3; /* Slightly darker shade on hover */
+    text-decoration: none; /* Ensures text remains not underlined on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+/* Active State */
+.a-button:active {
+    background-color: #004085; /* Even darker shade when button is clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Returns to normal shadow size */
+}
+
+/* Table CSS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #fff; /* White background */
+    border: 1px solid #dee2e6; /* Light grey border */
+    font-family: Arial, sans-serif; /* Simple and readable font */
+}
+
+tr {
+    border-bottom: 1px solid #dee2e6; /* Light grey border for rows */
+}
+
+th, td {
+    text-align: left;
+    padding: 0.75rem; /* Adequate padding */
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; /* Light grey border for cells */
+}
+
+th {
+    vertical-align: bottom;
+    background-color: #f8f9fa; /* Light background for headers */
+    font-weight: bold; /* Bold font for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8; /* Slightly different background for alternate rows */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Subtle grey background on hover */
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 600px) {
+    .loginform {
+        padding: 15px;
+        width: 90%; /* Takes up more space on smaller screens */
+    }
+
+    body {
+        background-size: contain; /* Adjust the background image for smaller screens */
+    }
+
+    h1, h2, h3, h4, p, a {
+        font-size: smaller; /* Adjust text size for readability */
+    }
+
+    .navcontainer, .footercontainer {
+        padding: 10px; /* Reduce padding for navigation and footer */
+    }
+
+    table {
+        width: 100%; /* Full-width for better readability */
+        border: 0; /* Remove borders for a cleaner look */
+    }
+    
+    table th {
+        font-size: 14px; /* Reduce font size for headers */
+        padding: 8px; /* Adjust padding to be smaller */
+        display: block; /* Display headers as block if you want them to appear */
+        text-align: left; /* Align text to the left */
+        background-color: #f2f2f2; /* Light background for headers */
+        border-bottom: 1px solid black; /* Add a bottom border for separation */ 
+    }
+
+    table thead {
+        display: none; /* Hide the header */
+    }
+
+    table tr {
+        margin-bottom: 15px; /* Increase space between rows for clarity */
+        display: block;
+        background-color: #f8f8f8; /* Slightly different background for each row */
+    }
+
+    table td {
+        display: block;
+        text-align: left; /* Center align text for better readability */
+        padding: 10px; /* Increase padding for touch targets */
+        position: relative;
+        border-bottom: 1px solid #ddd; /* Add a border to separate cells */
+    }
+
+    table td::before {
+        content: attr(data-label); /* Display column headers as labels */
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navcontainer {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+
+    .logo {
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 20px; /* Slightly reduce the font size */
+    }
+
+    .logo-pic {
+        max-width: 30%; /* Adjust the logo size for mobile */
+        max-height: 30%;
+    }
+  
+    nav ul {
+        flex-direction: column; /* Stack the menu items vertically */
+        align-items: start;
+        padding-top: 10px; /* Add some space between the logo and menu items */
+    }
+
+    nav ul li {
+        padding: 8px 0; /* Adjust padding for each list item */
+    }
+
+    nav a {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+}
+
+/* Additional Styles for Small Screen Devices */
+@media screen and (max-width: 400px) {
+    .row, .column {
+        flex-direction: column; /* Stack elements vertically on very small screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul li {
+        padding: 5px 0; /* Adjust padding for list items in nav */
+    }
+}

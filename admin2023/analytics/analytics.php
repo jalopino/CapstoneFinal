@@ -43,7 +43,7 @@
         data.addColumn('number', 'Paid');
         data.addColumn('number', 'Unpaid');
         data.addColumn('number', 'Pending');
-        data.addColumn('number', 'Dispute Accepted');  // New column for 'Dispute Accepted'
+        data.addColumn('number', 'Dispute-Accepted');  // New column for 'Dispute Accepted'
 
         <?php
         foreach ($violationsData as $row) {
@@ -51,7 +51,7 @@
             $paidCount = $row['status'] == 'Paid' ? $row['count'] : 0;
             $unpaidCount = $row['status'] == 'Unpaid' ? $row['count'] : 0;
             $pendingCount = $row['status'] == 'Pending' ? $row['count'] : 0;
-            $disputeAcceptedCount = $row['status'] == 'Dispute Accepted' ? $row['count'] : 0; // New count for 'Dispute Accepted'
+            $disputeAcceptedCount = $row['status'] == 'Dispute Accepted' ? $row['count'] : 0; 
             echo "data.addRow(['".$date."', ".$paidCount.", ".$unpaidCount.", ".$pendingCount.", ".$disputeAcceptedCount."]);";
         }
         ?>
